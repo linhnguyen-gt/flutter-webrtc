@@ -2,6 +2,10 @@ name: webrtc_example
 description: Demonstrates how to use the webrtc plugin.
 version: 1.0.0
 
+environment:
+  sdk: ">=2.2.2 <3.0.0"
+  flutter: ^1.10.0
+
 dependencies:
   flutter:
     sdk: flutter
