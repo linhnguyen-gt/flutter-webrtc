@@ -327,16 +327,20 @@ public class RTCAudioManager {
 
     switch (device) {
       case SPEAKER_PHONE:
-        setSpeakerphoneOn(true);
+        // setSpeakerphoneOn(false);
+        Log.d(TAG, "setSpeakerphoneOn(SPEAKER_PHONE)");
         break;
       case EARPIECE:
-        setSpeakerphoneOn(false);
+        // setSpeakerphoneOn(false);
+        Log.d(TAG, "setSpeakerphoneOn(EARPIECE)");
         break;
       case WIRED_HEADSET:
-        setSpeakerphoneOn(false);
+        // setSpeakerphoneOn(false);
+        Log.d(TAG, "setSpeakerphoneOn(WIRED_HEADSET)");
         break;
       case BLUETOOTH:
-        setSpeakerphoneOn(false);
+        // setSpeakerphoneOn(false);
+        Log.d(TAG, "setSpeakerphoneOn(BLUETOOTH)");
         break;
       default:
         Log.e(TAG, "Invalid audio device selection");
