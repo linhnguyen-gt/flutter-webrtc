@@ -139,6 +139,7 @@ class RTCVideoRenderer {
     if (_htmlVideoElement != null) return _htmlVideoElement;
     final fltPv = HTML.document.getElementsByTagName('flt-platform-view');
     if (fltPv.isEmpty) return null;
+    // ignore: avoid_as
     return (fltPv.first as HTML.Element).shadowRoot.lastChild;
   }
 

@@ -70,6 +70,7 @@ class RTCPeerConnection {
       }
       jsStream.onAddTrack.listen((mediaStreamTrackEvent) {
         final jsTrack =
+            // ignore: avoid_as
             (mediaStreamTrackEvent as HTML.MediaStreamTrackEvent).track;
         final MediaStreamTrack track = MediaStreamTrack(jsTrack);
         mediaStream.addTrack(track, addToNative: false);
@@ -79,6 +80,7 @@ class RTCPeerConnection {
       });
       jsStream.onRemoveTrack.listen((mediaStreamTrackEvent) {
         final jsTrack =
+            // ignore: avoid_as
             (mediaStreamTrackEvent as HTML.MediaStreamTrackEvent).track;
         final MediaStreamTrack track = MediaStreamTrack(jsTrack);
         mediaStream.removeTrack(track, removeFromNative: false);
