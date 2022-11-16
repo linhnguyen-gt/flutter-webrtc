@@ -2,6 +2,9 @@ name: flutter_webrtc
 description: Flutter WebRTC plugin for iOS/Android/Destkop/Web.
 version: 0.2.9
 homepage: https://github.com/cloudwebrtc/flutter-webrtc
+environment:
+  sdk: '>=2.7.0 <3.0.0'
+  flutter: '>=1.22.0'
 
 dependencies:
   flutter:
@@ -18,6 +21,3 @@ flutter:
       macos:
         pluginClass: FlutterWebRTCPlugin
 
-environment:
-  sdk: ">=2.2.2 <3.0.0"
-  flutter: ^1.10.0
